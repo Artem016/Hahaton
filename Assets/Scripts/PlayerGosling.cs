@@ -11,7 +11,7 @@ public class PlayerGosling : MonoBehaviour
         if(collision.tag == gunTag)
         {
             collision.gameObject.SetActive(false);
-            
+            transform.GetChild(transform.childCount - 1).gameObject.SetActive(true);
         }
     }
 

@@ -193,20 +193,10 @@ MonoBehaviour:
   jumpMultiplier: 2
   jumpPower: 5
   fallMultiplier: 5
-  uraniumNeed: 3
   groundCheck: {fileID: 284370650358944431}
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  abilityPlayer:
-    m_Name: Ability Player
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 853529f8-43f8-4ad8-940d-eec6d12c4116
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
 --- !u!114 &284370650373818083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3492216423753111182
 Transform:
   m_ObjectHideFlags: 0

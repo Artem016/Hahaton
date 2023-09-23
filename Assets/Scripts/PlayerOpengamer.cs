@@ -56,7 +56,6 @@ public class PlayerOpengamer : MonoBehaviour
             {
                 player.Win();
                 audioSours.PlayOneShot(boomClip);
-                boomObject.GetComponent<Animation>().Play();
                 boomObject.SetActive(true);
             }
         }
