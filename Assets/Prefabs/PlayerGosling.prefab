@@ -303,6 +303,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunTag: gun
+  abilityPlayer:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a93d022c-08ed-4ee6-9f47-4272e40a963f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  gunShootClip: {fileID: 0}
+  audioSource: {fileID: 0}
+  timer: 3
 --- !u!1 &1622805283630548840
 GameObject:
   m_ObjectHideFlags: 0
