@@ -1082,14 +1082,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Uranium (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 378433353436680955, guid: dba065baa6a7ce841bf73adfe3a5d0a7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 378433353436680955, guid: dba065baa6a7ce841bf73adfe3a5d0a7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba065baa6a7ce841bf73adfe3a5d0a7, type: 3}
 --- !u!4 &1083274293 stripped
@@ -1923,40 +1915,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 560339196}
     m_Modifications:
     - target: {fileID: 2811382240366681281, guid: 767407d7d820d304085593214c9e69bb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2811382240366681281, guid: 767407d7d820d304085593214c9e69bb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1500798458}
-    - target: {fileID: 2811382240366681281, guid: 767407d7d820d304085593214c9e69bb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967310543760030005, guid: 767407d7d820d304085593214c9e69bb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967310543760030005, guid: 767407d7d820d304085593214c9e69bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1500798458}
     - target: {fileID: 4967310543760030005, guid: 767407d7d820d304085593214c9e69bb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadIndexScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967310543760030005, guid: 767407d7d820d304085593214c9e69bb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1500798458}
     - target: {fileID: 4967310544277469426, guid: 767407d7d820d304085593214c9e69bb, type: 3}
       propertyPath: m_Name
       value: WinWindow
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967310544277469426, guid: 767407d7d820d304085593214c9e69bb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4967310544277469427, guid: 767407d7d820d304085593214c9e69bb, type: 3}
       propertyPath: m_Pivot.x
@@ -2046,10 +2014,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1500798458}
-    - target: {fileID: 8168512455864016700, guid: 767407d7d820d304085593214c9e69bb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadThisScene
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 767407d7d820d304085593214c9e69bb, type: 3}
 --- !u!1001 &7002014961505839060
@@ -2063,25 +2027,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1500798458}
-    - target: {fileID: 3124045984429012966, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadThisScene
-      objectReference: {fileID: 0}
     - target: {fileID: 3911355940316397607, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1500798458}
-    - target: {fileID: 3911355940316397607, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitGame
-      objectReference: {fileID: 0}
     - target: {fileID: 7002014961827399969, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
       propertyPath: m_Name
       value: DeadWindow
-      objectReference: {fileID: 0}
-    - target: {fileID: 7002014961827399969, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7002014961827399970, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
       propertyPath: m_Pivot.x
@@ -2168,17 +2120,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9003682086330104252, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9003682086330104252, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1500798458}
-    - target: {fileID: 9003682086330104252, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadIndexScene
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2eec365dc8d2c448884546ab97d152e, type: 3}
 --- !u!1001 &8283071355585330292
