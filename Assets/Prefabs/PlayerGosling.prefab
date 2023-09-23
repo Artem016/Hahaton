@@ -151,6 +151,7 @@ Transform:
   - {fileID: 284370650358944431}
   - {fileID: 602035337}
   - {fileID: 3492216423753111182}
+  - {fileID: 3994090040006924453}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -304,17 +305,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunTag: gun
   abilityPlayer:
-    m_Name: 
+    m_Name: Ability Player
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: a93d022c-08ed-4ee6-9f47-4272e40a963f
+    m_Id: b66b0aac-7b09-4911-81e9-367e9afd3466
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 7ca8e0a9-8028-4de3-a8b3-914d41a39127
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Ability Player
+      m_Flags: 0
     m_Flags: 0
-  gunShootClip: {fileID: 0}
+  gunShootClip: {fileID: 8300000, guid: f520d89a58bd3464e9e501ca527975eb, type: 3}
   audioSource: {fileID: 0}
   timer: 3
+  bulletPrefab: {fileID: 0}
 --- !u!1 &1622805283630548840
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,3 +409,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6143921873462332447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3994090040006924453}
+  m_Layer: 0
+  m_Name: PointGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3994090040006924453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6143921873462332447}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5370002, y: -0.12099981, z: 0.0015728298}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 284370650373818080}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -8,6 +8,7 @@ TagManager:
   - uranium
   - winZone
   - gun
+  - whip
   layers:
   - Default
   - TransparentFX

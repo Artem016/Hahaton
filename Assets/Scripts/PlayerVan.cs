@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerGosling : MonoBehaviour
+public class PlayerVan : MonoBehaviour
 {
-    [SerializeField] private string gunTag = "gun";
+    [SerializeField] private string whipTag = "whip";
     [SerializeField] private InputAction abilityPlayer;
-    [SerializeField] private AudioClip gunShootClip;
+    [SerializeField] private AudioClip whipShootClip;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private float timer = 3f;
-    [SerializeField] private Transform bulletPrefab;
 
     private bool _isArmed = false;
     private bool _isLoaded = true;
 
     private void Start()
     {
+        
         StartCoroutine(RepeatedFunction());
     }
 
@@ -32,20 +32,20 @@ public class PlayerGosling : MonoBehaviour
         }
     }
 
-    private void TakeGun(Collider2D collision)
+    private void TakeWhip(Collider2D collision)
     {
-        if(collision.tag == gunTag)
+        if (collision.tag == whipTag)
         {
             collision.gameObject.SetActive(false);
             _isArmed |= true;
-            transform.GetChild(transform.childCount - 2).gameObject.SetActive(true);
-            transform.GetChild(transform.childCount - 3).gameObject.SetActive(false);
+            transform.GetChild(transform.childCount - 1).gameObject.SetActive(true);
+            transform.GetChild(transform.childCount - 2).gameObject.SetActive(false);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        TakeGun(collision);
+        TakeWhip(collision);
     }
 
     private void OnEnable()
@@ -65,9 +65,9 @@ public class PlayerGosling : MonoBehaviour
         // Этот метод будет вызван при нажатии кнопки "E"
         if (context.performed && _isArmed && _isLoaded)
         {
-            audioSource.PlayOneShot(gunShootClip);
+            audioSource.PlayOneShot(whipShootClip);
+            Debug.Log("Удар");
             _isLoaded = false;
-            Instantiate(bulletPrefab, transform.GetChild(transform.childCount - 1).position, Quaternion.identity);
         }
     }
 }

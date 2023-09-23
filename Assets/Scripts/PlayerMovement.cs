@@ -33,6 +33,11 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        Time.timeScale = 0f;
+    }
+
     private void FixedUpdate()
     {
         _rigidbody.velocity = new(_vectorMovement.x * speed, _rigidbody.velocity.y);

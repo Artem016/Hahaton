@@ -21,4 +21,14 @@ public class SceneActions : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void FrizeTime()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void ReFrizeTime()
+    {
+        Time.timeScale = 1f;
+    }
 }
