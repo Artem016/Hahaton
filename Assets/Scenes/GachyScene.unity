@@ -1805,6 +1805,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 560339196}
     m_Modifications:
+    - target: {fileID: 2811382240366681281, guid: 767407d7d820d304085593214c9e69bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2007187770}
+    - target: {fileID: 2811382240366681281, guid: 767407d7d820d304085593214c9e69bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967310543760030005, guid: 767407d7d820d304085593214c9e69bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2007187770}
+    - target: {fileID: 4967310543760030005, guid: 767407d7d820d304085593214c9e69bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadIndexScene
+      objectReference: {fileID: 0}
     - target: {fileID: 4967310544277469426, guid: 767407d7d820d304085593214c9e69bb, type: 3}
       propertyPath: m_Name
       value: WinWindow
@@ -1897,6 +1913,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8168512455864016700, guid: 767407d7d820d304085593214c9e69bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2007187770}
+    - target: {fileID: 8168512455864016700, guid: 767407d7d820d304085593214c9e69bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadThisScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 767407d7d820d304085593214c9e69bb, type: 3}
 --- !u!1 &2071454848 stripped
@@ -1985,6 +2009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4066519253825095467, guid: 6e5b05f4e03fb6e4c80348d74d5bca88, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dc8890c679cd51d42bfc4b1d231c81b2, type: 3}
     - target: {fileID: 4066519253825095468, guid: 6e5b05f4e03fb6e4c80348d74d5bca88, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2031,6 +2059,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e5b05f4e03fb6e4c80348d74d5bca88, type: 3}
+--- !u!1 &4066519253718415529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4066519253825095466, guid: 6e5b05f4e03fb6e4c80348d74d5bca88, type: 3}
+  m_PrefabInstance: {fileID: 4066519253718415528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4066519253718415530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066519253718415529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6677efec543fa04b818039f0e928270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 178536323}
+  soundClip: {fileID: 8300000, guid: 46d0849f736ad204fb67017c8deabc88, type: 3}
 --- !u!1001 &8283071355585330292
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class PlayerGosling : MonoBehaviour
     [SerializeField] private float timer = 3f;
     [SerializeField] private Transform bulletPrefab;
 
+
     private bool _isArmed = false;
     private bool _isLoaded = true;
 
@@ -67,7 +68,7 @@ public class PlayerGosling : MonoBehaviour
         {
             audioSource.PlayOneShot(gunShootClip);
             _isLoaded = false;
-            Instantiate(bulletPrefab, transform.GetChild(transform.childCount - 1).position, Quaternion.identity);
+            Instantiate(bulletPrefab, transform.GetChild(transform.childCount - 1).position, Quaternion.identity);     
         }
     }
 }
