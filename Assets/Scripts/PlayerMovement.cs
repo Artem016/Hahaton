@@ -7,14 +7,17 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private Vector2 _vectorMovement;
     private string _barrelTag = "barrel";
+    private string winZoneTag = "winZone";
 
-    [SerializeField] private GameObject deadWindow; 
+
+    [SerializeField] private GameObject deadWindow;
+    [SerializeField] private GameObject winWindow;
     [SerializeField] private float speed;
-
     [SerializeField] private float jumpTime;
     [SerializeField] private float jumpMultiplier;
     [SerializeField] private float jumpPower;
     [SerializeField] private float fallMultiplier;
+    [SerializeField] private int uraniumNeed = 3;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -103,20 +106,64 @@ public class PlayerMovement : MonoBehaviour
     {
         _vectorMovement = context.ReadValue<Vector2>();
         Flip();
+    }       
+
+    protected virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag(winZoneTag))
+        {
+            Win();
+        }
     }
 
-    private void Dead(Collision2D collision)
+
+    private void Dead()
     {
-        // Проверяем, имеет ли столкнувшийся объект нужный тег
-        if (collision.gameObject.CompareTag(_barrelTag))
-        {
-            Time.timeScale = 0f;
-            deadWindow.SetActive(true);
-        }
+        Time.timeScale = 0f;
+        deadWindow.SetActive(true);
+    }
+
+    private void Win()
+    {
+        Time.timeScale = 0f;
+        winWindow.SetActive(true);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Dead(collision);
+        if (collision.gameObject.CompareTag(_barrelTag))
+        {
+            Dead();
+        }
+    }
+
+    //ТЕСТОВЫЙ КОД
+
+    [SerializeField] private InputAction abilityPlayer;
+
+    private void OnEnable()
+    {
+        abilityPlayer.Enable();
+        abilityPlayer.performed += InteractPerformed;
+    }
+
+    private void OnDisable()
+    {
+        abilityPlayer.Disable();
+        abilityPlayer.performed -= InteractPerformed;
+    }
+
+    private void InteractPerformed(InputAction.CallbackContext context)
+    {
+        // Этот метод будет вызван при нажатии кнопки "E"
+        if (context.performed)
+        {
+            if(PlayerOpengamer.GetUraniumCounter() >= uraniumNeed)
+            {
+                Win();
+            }
+        }
     }
 }
+
+

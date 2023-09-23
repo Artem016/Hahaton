@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneActions : MonoBehaviour
 {
-    public void ReLoadScene()
+    public void LoadOpengamerScene()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

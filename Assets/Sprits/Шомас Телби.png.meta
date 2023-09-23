@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 18435888dd9477e4d97a6b583f7764b7
+guid: d18bdc62f5a9eb44093746dd2ee721eb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u043A\u043E\u043D\u0433 \u0441\u043F\u0435\u0440\u0435\u0434\u0438_0"
+      name: "\u0428\u043E\u043C\u0430\u0441 \u0422\u0435\u043B\u0431\u0438_3"
       rect:
         serializedVersion: 2
-        x: 4
-        y: 0
-        width: 168
-        height: 136
+        x: 36
+        y: 37
+        width: 16
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1ea1a33b157d9647b092805dff1c3c7
-      internalID: 1143078164
+      spriteID: 2ff6bb5ae811f7e4c9fa8cc042e3eb5a
+      internalID: -401883028
       vertices: []
       indices: 
       edges: []
@@ -160,7 +160,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u043A\u043E\u043D\u0433 \u0441\u043F\u0435\u0440\u0435\u0434\u0438_0": 1143078164
+      "\u0428\u043E\u043C\u0430\u0441 \u0422\u0435\u043B\u0431\u0438_0": 1958508202
+      "\u0428\u043E\u043C\u0430\u0441 \u0422\u0435\u043B\u0431\u0438_1": -216293692
+      "\u0428\u043E\u043C\u0430\u0441 \u0422\u0435\u043B\u0431\u0438_2": -1967958262
+      "\u0428\u043E\u043C\u0430\u0441 \u0422\u0435\u043B\u0431\u0438_3": -401883028
+      "\u0428\u043E\u043C\u0430\u0441 \u0422\u0435\u043B\u0431\u0438_4": -19667612
+      "\u0428\u043E\u043C\u0430\u0441 \u0422\u0435\u043B\u0431\u0438_5": -1869072544
+      "\u0428\u043E\u043C\u0430\u0441 \u0422\u0435\u043B\u0431\u0438_6": -355944005
+      "\u0428\u043E\u043C\u0430\u0441 \u0422\u0435\u043B\u0431\u0438_7": 1270304859
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
