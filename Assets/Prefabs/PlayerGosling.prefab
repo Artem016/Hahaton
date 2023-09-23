@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 602035337}
   - component: {fileID: 602035338}
   m_Layer: 8
-  m_Name: PlayerOpengamer_Visual
+  m_Name: PlayerGosling_Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2074896035, guid: 2881138bcb6839c4b88d38cb6d85c1a5, type: 3}
+  m_Sprite: {fileID: 1378679507, guid: da569b48f58bbde4fb5cfc6060f8dd49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,9 +128,8 @@ GameObject:
   - component: {fileID: 284370650373818082}
   - component: {fileID: 284370650373818083}
   - component: {fileID: 5142053131354959659}
-  - component: {fileID: 1330241256}
   m_Layer: 8
-  m_Name: Player
+  m_Name: PlayerGosling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +198,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   abilityPlayer:
-    m_Name: 
+    m_Name: Ability Player
     m_Type: 0
     m_ExpectedControlType: 
     m_Id: 853529f8-43f8-4ad8-940d-eec6d12c4116
@@ -299,16 +298,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1330241256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284370650373818084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f17969455e20b5241b1202c84f45bbde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _uraniumTag: uranium

@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602035336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.76, y: 6.76, z: 6.76}
+  m_LocalPosition: {x: 0.0323, y: -0.0387, z: 0}
+  m_LocalScale: {x: 7.2568607, y: 7.2156243, z: 6.76}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 284370650373818080}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2074896035, guid: 2881138bcb6839c4b88d38cb6d85c1a5, type: 3}
+  m_Sprite: {fileID: 660045412, guid: bb21105fcd1a5884aa1a6fa64c17346e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -193,10 +193,20 @@ MonoBehaviour:
   jumpMultiplier: 2
   jumpPower: 5
   fallMultiplier: 5
+  uraniumNeed: 3
   groundCheck: {fileID: 284370650358944431}
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  abilityPlayer:
+    m_Name: Ability Player
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a50bc9e8-c2e7-4f98-9dba-bbe01a9be55d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!114 &284370650373818083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +264,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: a075bd9d-d945-43c8-a123-08c1b64fb8e5
     m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9c41b506-2f42-4638-af45-0bcfe261488d
+    m_ActionName: Player/AbilityPlayer[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
