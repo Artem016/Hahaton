@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _vectorMovement;
     private string _barrelTag = "barrel";
     private string winZoneTag = "winZone";
+    AudioManager audioManager = new AudioManager();
 
 
     [SerializeField] private GameObject deadWindow;
@@ -17,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpMultiplier;
     [SerializeField] private float jumpPower;
     [SerializeField] private float fallMultiplier;
-    [SerializeField] private int uraniumNeed = 3;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         Flip();
     }       
 
-    protected virtual void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(winZoneTag))
         {
@@ -117,13 +117,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    private void Dead()
+    public void Dead()
     {
         Time.timeScale = 0f;
         deadWindow.SetActive(true);
     }
 
-    private void Win()
+    public void Win()
     {
         Time.timeScale = 0f;
         winWindow.SetActive(true);
@@ -139,31 +139,9 @@ public class PlayerMovement : MonoBehaviour
 
     //ТЕСТОВЫЙ КОД
 
-    [SerializeField] private InputAction abilityPlayer;
 
-    private void OnEnable()
-    {
-        abilityPlayer.Enable();
-        abilityPlayer.performed += InteractPerformed;
-    }
 
-    private void OnDisable()
-    {
-        abilityPlayer.Disable();
-        abilityPlayer.performed -= InteractPerformed;
-    }
-
-    private void InteractPerformed(InputAction.CallbackContext context)
-    {
-        // Этот метод будет вызван при нажатии кнопки "E"
-        if (context.performed)
-        {
-            if(PlayerOpengamer.GetUraniumCounter() >= uraniumNeed)
-            {
-                Win();
-            }
-        }
-    }
+ 
 }
 
 

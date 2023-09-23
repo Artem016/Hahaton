@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class DestroyZone : MonoBehaviour
 {
-    public string targetTag = "ballet"; 
+    [SerializeField] private PlayerMovement player;
+    [SerializeField] private string barrelTag = "barrel"; 
+    [SerializeField] private string playerTag = "player";
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag(targetTag))
+        if (other.CompareTag(barrelTag))
         {
             Destroy(other.gameObject);
+        }
+        if (other.CompareTag(playerTag)) 
+        {
+            player.Dead();
         }
     }
 }
